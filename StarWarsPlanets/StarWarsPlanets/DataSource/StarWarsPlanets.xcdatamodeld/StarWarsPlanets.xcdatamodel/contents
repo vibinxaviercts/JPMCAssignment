@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20E241" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Film" representedClassName=".Film" syncable="YES" codeGenerationType="class">
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <relationship name="planet" maxCount="1" deletionRule="Nullify" destinationEntity="Planet" inverseName="films" inverseEntity="Planet"/>
+    </entity>
+    <entity name="Planet" representedClassName=".Planet" syncable="YES" codeGenerationType="class">
+        <attribute name="climate" optional="YES" attributeType="String"/>
+        <attribute name="created" optional="YES" attributeType="String"/>
+        <attribute name="diameter" optional="YES" attributeType="String"/>
+        <attribute name="edited" optional="YES" attributeType="String"/>
+        <attribute name="gravity" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="orbitalperiod" optional="YES" attributeType="String"/>
+        <attribute name="population" optional="YES" attributeType="String"/>
+        <attribute name="rotationperiod" optional="YES" attributeType="String"/>
+        <attribute name="surfacewater" optional="YES" attributeType="String"/>
+        <attribute name="terrain" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <relationship name="films" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Film" inverseName="planet" inverseEntity="Film"/>
+        <relationship name="residents" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Resident" inverseName="planet" inverseEntity="Resident"/>
+    </entity>
+    <entity name="Resident" representedClassName=".Resident" syncable="YES" codeGenerationType="class">
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <relationship name="planet" maxCount="1" deletionRule="Nullify" destinationEntity="Planet" inverseName="residents" inverseEntity="Planet"/>
+    </entity>
+    <fetchRequest name="FetchAllPlanets" entity="Planet"/>
+    <elements>
+        <element name="Planet" positionX="-27" positionY="18" width="128" height="239"/>
+        <element name="Film" positionX="18" positionY="153" width="128" height="59"/>
+        <element name="Resident" positionX="54" positionY="162" width="128" height="59"/>
+    </elements>
+</model>
