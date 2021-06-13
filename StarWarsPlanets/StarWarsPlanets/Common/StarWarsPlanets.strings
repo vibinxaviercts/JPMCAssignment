@@ -1,0 +1,15 @@
+/* 
+ StarWarsPlanets.strings
+ StarWarsPlanets
+
+  Created by Vibin Xavier on 11/06/21.
+  
+*/
+"App Name" = "Star Wars Planets";
+"Ok" = "Ok";
+
+// Error Messages
+"noNetwork_Msg" = "Unable to connect the server.";
+"timeOut_Msg" = "Request time out";
+"parseErr_Msg" = "Unable to parse the response.";
+"offlineErr_Msg" = "Unable to fetch the offline data!\n Please try the refresh option on the screen.";

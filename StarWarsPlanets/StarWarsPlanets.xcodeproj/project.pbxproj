@@ -1,0 +1,723 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E37D4A026737F4E0051943F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E37D49F26737F4E0051943F /* AppDelegate.swift */; };
+		8E37D4A226737F4E0051943F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E37D4A126737F4E0051943F /* SceneDelegate.swift */; };
+		8E37D4A426737F4E0051943F /* SWPPlanetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E37D4A326737F4E0051943F /* SWPPlanetListViewController.swift */; };
+		8E37D4A726737F4E0051943F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E37D4A526737F4E0051943F /* Main.storyboard */; };
+		8E37D4AA26737F4E0051943F /* StarWarsPlanets.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E37D4A826737F4E0051943F /* StarWarsPlanets.xcdatamodeld */; };
+		8E37D4AC26737F540051943F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E37D4AB26737F540051943F /* Assets.xcassets */; };
+		8E37D4AF26737F540051943F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E37D4AD26737F540051943F /* LaunchScreen.storyboard */; };
+		8E37D4BA26737F540051943F /* StarWarsPlanetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E37D4B926737F540051943F /* StarWarsPlanetsTests.swift */; };
+		8E37D4C526737F550051943F /* StarWarsPlanetsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E37D4C426737F550051943F /* StarWarsPlanetsUITests.swift */; };
+		8E37D4D7267381BF0051943F /* SWPCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E37D4D6267381BF0051943F /* SWPCommon.swift */; };
+		8E37D4D9267381DA0051943F /* StarWarsPlanets.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E37D4D8267381DA0051943F /* StarWarsPlanets.strings */; };
+		8E37D4DC2673826E0051943F /* SWPConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E37D4DA2673826E0051943F /* SWPConstants.swift */; };
+		8E37D4DD2673826E0051943F /* SWPWebServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E37D4DB2673826E0051943F /* SWPWebServiceConstants.swift */; };
+		8E37D4E0267382D90051943F /* SWPWebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E37D4DE267382D90051943F /* SWPWebServiceManager.swift */; };
+		8E37D4E1267382D90051943F /* SWPCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E37D4DF267382D90051943F /* SWPCoreDataManager.swift */; };
+		8E37D4E7267388140051943F /* SWPPlanetListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E37D4E6267388140051943F /* SWPPlanetListModel.swift */; };
+		8E37D4E926738A2C0051943F /* SWPPlanetListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E37D4E826738A2C0051943F /* SWPPlanetListPresenter.swift */; };
+		8E4C7C942674E796002A6388 /* SWPPlanetListModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4C7C932674E796002A6388 /* SWPPlanetListModelTest.swift */; };
+		8E4C7C9626755CCF002A6388 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4C7C9526755CCF002A6388 /* NetworkMonitor.swift */; };
+		8E4C7C9A267602F6002A6388 /* SWPPlanetListPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4C7C99267602F6002A6388 /* SWPPlanetListPresenterTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E37D4B626737F540051943F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E37D49426737F4E0051943F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E37D49B26737F4E0051943F;
+			remoteInfo = StarWarsPlanets;
+		};
+		8E37D4C126737F550051943F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E37D49426737F4E0051943F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E37D49B26737F4E0051943F;
+			remoteInfo = StarWarsPlanets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8E37D49C26737F4E0051943F /* StarWarsPlanets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsPlanets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E37D49F26737F4E0051943F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E37D4A126737F4E0051943F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8E37D4A326737F4E0051943F /* SWPPlanetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWPPlanetListViewController.swift; sourceTree = "<group>"; };
+		8E37D4A626737F4E0051943F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E37D4A926737F4E0051943F /* StarWarsPlanets.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StarWarsPlanets.xcdatamodel; sourceTree = "<group>"; };
+		8E37D4AB26737F540051943F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E37D4AE26737F540051943F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E37D4B026737F540051943F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E37D4B526737F540051943F /* StarWarsPlanetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWarsPlanetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E37D4B926737F540051943F /* StarWarsPlanetsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsPlanetsTests.swift; sourceTree = "<group>"; };
+		8E37D4BB26737F540051943F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E37D4C026737F550051943F /* StarWarsPlanetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWarsPlanetsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E37D4C426737F550051943F /* StarWarsPlanetsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsPlanetsUITests.swift; sourceTree = "<group>"; };
+		8E37D4C626737F550051943F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E37D4D6267381BF0051943F /* SWPCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWPCommon.swift; sourceTree = "<group>"; };
+		8E37D4D8267381DA0051943F /* StarWarsPlanets.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = StarWarsPlanets.strings; sourceTree = "<group>"; };
+		8E37D4DA2673826E0051943F /* SWPConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWPConstants.swift; sourceTree = "<group>"; };
+		8E37D4DB2673826E0051943F /* SWPWebServiceConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWPWebServiceConstants.swift; sourceTree = "<group>"; };
+		8E37D4DE267382D90051943F /* SWPWebServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWPWebServiceManager.swift; sourceTree = "<group>"; };
+		8E37D4DF267382D90051943F /* SWPCoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWPCoreDataManager.swift; sourceTree = "<group>"; };
+		8E37D4E6267388140051943F /* SWPPlanetListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWPPlanetListModel.swift; sourceTree = "<group>"; };
+		8E37D4E826738A2C0051943F /* SWPPlanetListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWPPlanetListPresenter.swift; sourceTree = "<group>"; };
+		8E4C7C932674E796002A6388 /* SWPPlanetListModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWPPlanetListModelTest.swift; sourceTree = "<group>"; };
+		8E4C7C9526755CCF002A6388 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		8E4C7C99267602F6002A6388 /* SWPPlanetListPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWPPlanetListPresenterTest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E37D49926737F4E0051943F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E37D4B226737F540051943F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E37D4BD26737F550051943F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E37D49326737F4E0051943F = {
+			isa = PBXGroup;
+			children = (
+				8E37D49E26737F4E0051943F /* StarWarsPlanets */,
+				8E37D4B826737F540051943F /* StarWarsPlanetsTests */,
+				8E37D4C326737F550051943F /* StarWarsPlanetsUITests */,
+				8E37D49D26737F4E0051943F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E37D49D26737F4E0051943F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E37D49C26737F4E0051943F /* StarWarsPlanets.app */,
+				8E37D4B526737F540051943F /* StarWarsPlanetsTests.xctest */,
+				8E37D4C026737F550051943F /* StarWarsPlanetsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E37D49E26737F4E0051943F /* StarWarsPlanets */ = {
+			isa = PBXGroup;
+			children = (
+				8E37D4D2267381540051943F /* PlanetList */,
+				8E37D4D52673817A0051943F /* Common */,
+				8E37D4D4267381710051943F /* UI */,
+				8E37D4D3267381650051943F /* DataSource */,
+				8E37D4AB26737F540051943F /* Assets.xcassets */,
+				8E37D4B026737F540051943F /* Info.plist */,
+				8E37D49F26737F4E0051943F /* AppDelegate.swift */,
+				8E37D4A126737F4E0051943F /* SceneDelegate.swift */,
+			);
+			path = StarWarsPlanets;
+			sourceTree = "<group>";
+		};
+		8E37D4B826737F540051943F /* StarWarsPlanetsTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E4C7C99267602F6002A6388 /* SWPPlanetListPresenterTest.swift */,
+				8E4C7C932674E796002A6388 /* SWPPlanetListModelTest.swift */,
+				8E37D4B926737F540051943F /* StarWarsPlanetsTests.swift */,
+				8E37D4BB26737F540051943F /* Info.plist */,
+			);
+			path = StarWarsPlanetsTests;
+			sourceTree = "<group>";
+		};
+		8E37D4C326737F550051943F /* StarWarsPlanetsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8E37D4C426737F550051943F /* StarWarsPlanetsUITests.swift */,
+				8E37D4C626737F550051943F /* Info.plist */,
+			);
+			path = StarWarsPlanetsUITests;
+			sourceTree = "<group>";
+		};
+		8E37D4D2267381540051943F /* PlanetList */ = {
+			isa = PBXGroup;
+			children = (
+				8E37D4E52673864B0051943F /* Presenters */,
+				8E37D4E4267386400051943F /* Views */,
+				8E37D4E3267386360051943F /* Models */,
+			);
+			path = PlanetList;
+			sourceTree = "<group>";
+		};
+		8E37D4D3267381650051943F /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				8E37D4DF267382D90051943F /* SWPCoreDataManager.swift */,
+				8E37D4DE267382D90051943F /* SWPWebServiceManager.swift */,
+				8E37D4A826737F4E0051943F /* StarWarsPlanets.xcdatamodeld */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		8E37D4D4267381710051943F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8E37D4A526737F4E0051943F /* Main.storyboard */,
+				8E37D4AD26737F540051943F /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8E37D4D52673817A0051943F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8E37D4E2267384EF0051943F /* Utilities */,
+				8E37D4D8267381DA0051943F /* StarWarsPlanets.strings */,
+				8E37D4DA2673826E0051943F /* SWPConstants.swift */,
+				8E37D4DB2673826E0051943F /* SWPWebServiceConstants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8E37D4E2267384EF0051943F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8E37D4D6267381BF0051943F /* SWPCommon.swift */,
+				8E4C7C9526755CCF002A6388 /* NetworkMonitor.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8E37D4E3267386360051943F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E37D4E6267388140051943F /* SWPPlanetListModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8E37D4E4267386400051943F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8E37D4A326737F4E0051943F /* SWPPlanetListViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8E37D4E52673864B0051943F /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				8E37D4E826738A2C0051943F /* SWPPlanetListPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E37D49B26737F4E0051943F /* StarWarsPlanets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E37D4C926737F550051943F /* Build configuration list for PBXNativeTarget "StarWarsPlanets" */;
+			buildPhases = (
+				8E37D49826737F4E0051943F /* Sources */,
+				8E37D49926737F4E0051943F /* Frameworks */,
+				8E37D49A26737F4E0051943F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarWarsPlanets;
+			productName = StarWarsPlanets;
+			productReference = 8E37D49C26737F4E0051943F /* StarWarsPlanets.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E37D4B426737F540051943F /* StarWarsPlanetsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E37D4CC26737F550051943F /* Build configuration list for PBXNativeTarget "StarWarsPlanetsTests" */;
+			buildPhases = (
+				8E37D4B126737F540051943F /* Sources */,
+				8E37D4B226737F540051943F /* Frameworks */,
+				8E37D4B326737F540051943F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E37D4B726737F540051943F /* PBXTargetDependency */,
+			);
+			name = StarWarsPlanetsTests;
+			productName = StarWarsPlanetsTests;
+			productReference = 8E37D4B526737F540051943F /* StarWarsPlanetsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8E37D4BF26737F550051943F /* StarWarsPlanetsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E37D4CF26737F550051943F /* Build configuration list for PBXNativeTarget "StarWarsPlanetsUITests" */;
+			buildPhases = (
+				8E37D4BC26737F550051943F /* Sources */,
+				8E37D4BD26737F550051943F /* Frameworks */,
+				8E37D4BE26737F550051943F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E37D4C226737F550051943F /* PBXTargetDependency */,
+			);
+			name = StarWarsPlanetsUITests;
+			productName = StarWarsPlanetsUITests;
+			productReference = 8E37D4C026737F550051943F /* StarWarsPlanetsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E37D49426737F4E0051943F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					8E37D49B26737F4E0051943F = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					8E37D4B426737F540051943F = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 8E37D49B26737F4E0051943F;
+					};
+					8E37D4BF26737F550051943F = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 8E37D49B26737F4E0051943F;
+					};
+				};
+			};
+			buildConfigurationList = 8E37D49726737F4E0051943F /* Build configuration list for PBXProject "StarWarsPlanets" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E37D49326737F4E0051943F;
+			productRefGroup = 8E37D49D26737F4E0051943F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E37D49B26737F4E0051943F /* StarWarsPlanets */,
+				8E37D4B426737F540051943F /* StarWarsPlanetsTests */,
+				8E37D4BF26737F550051943F /* StarWarsPlanetsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E37D49A26737F4E0051943F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E37D4AF26737F540051943F /* LaunchScreen.storyboard in Resources */,
+				8E37D4AC26737F540051943F /* Assets.xcassets in Resources */,
+				8E37D4D9267381DA0051943F /* StarWarsPlanets.strings in Resources */,
+				8E37D4A726737F4E0051943F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E37D4B326737F540051943F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E37D4BE26737F550051943F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E37D49826737F4E0051943F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E37D4A426737F4E0051943F /* SWPPlanetListViewController.swift in Sources */,
+				8E4C7C9626755CCF002A6388 /* NetworkMonitor.swift in Sources */,
+				8E37D4DD2673826E0051943F /* SWPWebServiceConstants.swift in Sources */,
+				8E37D4E0267382D90051943F /* SWPWebServiceManager.swift in Sources */,
+				8E37D4A026737F4E0051943F /* AppDelegate.swift in Sources */,
+				8E37D4E926738A2C0051943F /* SWPPlanetListPresenter.swift in Sources */,
+				8E37D4E7267388140051943F /* SWPPlanetListModel.swift in Sources */,
+				8E37D4D7267381BF0051943F /* SWPCommon.swift in Sources */,
+				8E37D4E1267382D90051943F /* SWPCoreDataManager.swift in Sources */,
+				8E37D4AA26737F4E0051943F /* StarWarsPlanets.xcdatamodeld in Sources */,
+				8E37D4A226737F4E0051943F /* SceneDelegate.swift in Sources */,
+				8E37D4DC2673826E0051943F /* SWPConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E37D4B126737F540051943F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E4C7C9A267602F6002A6388 /* SWPPlanetListPresenterTest.swift in Sources */,
+				8E4C7C942674E796002A6388 /* SWPPlanetListModelTest.swift in Sources */,
+				8E37D4BA26737F540051943F /* StarWarsPlanetsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E37D4BC26737F550051943F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E37D4C526737F550051943F /* StarWarsPlanetsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E37D4B726737F540051943F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E37D49B26737F4E0051943F /* StarWarsPlanets */;
+			targetProxy = 8E37D4B626737F540051943F /* PBXContainerItemProxy */;
+		};
+		8E37D4C226737F550051943F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E37D49B26737F4E0051943F /* StarWarsPlanets */;
+			targetProxy = 8E37D4C126737F550051943F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8E37D4A526737F4E0051943F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E37D4A626737F4E0051943F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E37D4AD26737F540051943F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E37D4AE26737F540051943F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E37D4C726737F550051943F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8E37D4C826737F550051943F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E37D4CA26737F550051943F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2EU3UB2977;
+				INFOPLIST_FILE = StarWarsPlanets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vibinxavier.StarWarsPlanets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E37D4CB26737F550051943F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2EU3UB2977;
+				INFOPLIST_FILE = StarWarsPlanets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vibinxavier.StarWarsPlanets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8E37D4CD26737F550051943F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2EU3UB2977;
+				INFOPLIST_FILE = StarWarsPlanetsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vibinxavier.StarWarsPlanetsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarWarsPlanets.app/StarWarsPlanets";
+			};
+			name = Debug;
+		};
+		8E37D4CE26737F550051943F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2EU3UB2977;
+				INFOPLIST_FILE = StarWarsPlanetsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vibinxavier.StarWarsPlanetsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarWarsPlanets.app/StarWarsPlanets";
+			};
+			name = Release;
+		};
+		8E37D4D026737F550051943F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2EU3UB2977;
+				INFOPLIST_FILE = StarWarsPlanetsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vibinxavier.StarWarsPlanetsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StarWarsPlanets;
+			};
+			name = Debug;
+		};
+		8E37D4D126737F550051943F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2EU3UB2977;
+				INFOPLIST_FILE = StarWarsPlanetsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vibinxavier.StarWarsPlanetsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StarWarsPlanets;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E37D49726737F4E0051943F /* Build configuration list for PBXProject "StarWarsPlanets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E37D4C726737F550051943F /* Debug */,
+				8E37D4C826737F550051943F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E37D4C926737F550051943F /* Build configuration list for PBXNativeTarget "StarWarsPlanets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E37D4CA26737F550051943F /* Debug */,
+				8E37D4CB26737F550051943F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E37D4CC26737F550051943F /* Build configuration list for PBXNativeTarget "StarWarsPlanetsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E37D4CD26737F550051943F /* Debug */,
+				8E37D4CE26737F550051943F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E37D4CF26737F550051943F /* Build configuration list for PBXNativeTarget "StarWarsPlanetsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E37D4D026737F550051943F /* Debug */,
+				8E37D4D126737F550051943F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8E37D4A826737F4E0051943F /* StarWarsPlanets.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8E37D4A926737F4E0051943F /* StarWarsPlanets.xcdatamodel */,
+			);
+			currentVersion = 8E37D4A926737F4E0051943F /* StarWarsPlanets.xcdatamodel */;
+			path = StarWarsPlanets.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8E37D49426737F4E0051943F /* Project object */;
+}
